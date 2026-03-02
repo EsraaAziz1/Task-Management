@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right , rgb(126, 67, 254) , rgba(98, 51, 186, 0.738) , rgb(98, 69, 140));
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+/* /////////////////////// Task Board ////////////////////////*/
+.TaskBoard{
+    display: -webkit-box;
+    width: 95%;
+    
+}
+/* ///////////////Section: Tasks////////// */
+
+.tasks{
+    margin-left: 20px;
+    width: 22% ;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+/* ////////////h3//////////// */
+.tasks nav {
+    margin-top: 5px;
+    padding: 2px;
+    /* margin-left: 5%; */
+
+    display: -webkit-box;
+    width: 100%;
+}
+
+.tasks p{
+     width: 80%;
+    /* -webkit-box-flex: 1; */
+}
+.tasks .counter{
+    width: 22px;
+    height: 22px;
+    border-radius: 45%;
+    background-color: rgba(255, 165, 9,0.786);
+    text-align:center;
+    padding: 2px;
+    color: white;
+}
+/* ///////////input/////// */
+.tasks input{
+    margin-top: 3px;
+    margin-left: 5px;
+    padding: 5px;
+}
+.tasks input[type='text']{
+    width: 69%;
+    height: 25px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 4px;
+}
+.tasks input[type='button']{
+    width: 20%;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    background-color:rgba(255, 165, 9, 0.786) ;
+    color: white;
+}
+.tasks input[type='button']:hover{
+    background-color:rgba(255, 165, 9, 0.958) ;
+    box-shadow: 3px 3px 2px rgba(255, 211, 136, 0.958);
+    cursor: pointer;
+}
+.tasks .NoTask{
+       text-align: center;
+       margin: 6px auto;
+       color: rgb(163, 163, 163);
+    
+}
+.tasks .NoTask span{
+    display: block;
+    text-align: center;
+}
+
+/* /////////////task addition////////////*/
+.task{
+    display: -webkit-box;
+    display: block;       
+    position: relative;    
+    background-color: rgb(243, 243, 243);
+    width: 80%;
+    margin: 3px auto;    
+    padding: 5px 5px;   
+    color: black ;
+    cursor: move;
+    height: 25px;
+    box-shadow: 3px 3px 4px rgb(231, 231, 231);
+    border-radius: 5px;
+}
+.task .taskTXT{
+    /* margin: 5px; */
+    margin-top: 2px; 
+    display: block; 
+}
+.task .remove{
+   position: absolute;
+    right: 5px;    
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+/* /////////////////////////Drag Task For Person////////////// */
+.subTask{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 75%;
+    margin-left:5px ;
+}
+.persons{
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 75%;
+}
+.persons .person1{
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-flex: 1;
+    width: 300px;
+    height: auto;
+    margin-left: 8px;
+}
+.persons .person1 h3{
+    /* margin-top: 5px; */
+    padding: 2px;
+    background-color: rgb(236, 236, 236);
+    display: -webkit-box;
+    width: 96%;
+    height: 30px;
+    margin-left:2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(244, 244, 250);
+}
+/* .persons .person1 h3 span{
+      width: 50%;
+} */
+.persons .person1 h3 .counter2{
+    width: 22px;
+    height: 22px;
+    border-radius: 45%;
+    background-color: rgba(255, 165, 9,0.786);
+    text-align:center;
+    padding: 2px;
+    color: white;
+    margin-left: 80px;
+}
+.dragTask {
+    min-height: 235px;
+    /* border: 2px dashed #ccc; */
+}
+.dragging{
+    border:2px solid rgba(201, 150, 211, 0.758);
+    box-shadow: 3px 3px 3px rgba(57, 31, 64, 0.484);
+    
+}
