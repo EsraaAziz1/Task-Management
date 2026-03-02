@@ -37,9 +37,9 @@ A dynamic and interactive **Task Management System** built with vanilla JavaScri
 
 ## How to Use
 
-1. Open the app in a browser.  
-2. Enter your tasks in the input field and click **Add Task**.  
-3. Enter team member names separated by commas.  
+1. Open the app in a browser.
+2. Enter team member names separated by commas.  
+3. Enter your tasks in the input field and click **Add Task**.  
 4. Drag tasks to assign them to team members.  
 5. Use the dropdown in each task to update its status.  
 6. Remove tasks with the ❌ button as needed.  
